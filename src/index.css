@@ -1,0 +1,93 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #eee;
+}
+
+h4{
+  margin: 0;
+}
+
+.container {
+  background-color: aliceblue;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+.transaction-card {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex; /* Makes the card layout flexible */
+  justify-content: space-between; /* Ensures even spacing between child elements */
+  align-items: center; 
+  margin-bottom: 10px;/* Aligns items vertically */
+}
+.transaction-card.positive {
+  border-right: 4px solid green;
+}
+.transaction-card.negative {
+  border-right: 4px solid red;
+}
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+form input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+form button {
+  width: 100%;
+  padding: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+} 
+.inc-exp-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #ffff;
+  border-radius: 10px;
+}
+.inc-exp-container h3{
+ margin: 0;
+}
+.separator {
+  width: 2px;
+  background-color: #ccc;
+ }
+ .btn-container {
+  display: none;
+  position: absolute;
+  background-color: #cccccc77;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.transaction-card-container:hover .btn-container {
+  display: flex;
+}
+
+.transaction-card-container {
+  position: relative;
+}
